@@ -1,0 +1,9 @@
+body {
+    background-color: #000000 !important;
+}
+
+.header {
+    color: red;
+    left: 40%;
+    position: fixed;
+}
