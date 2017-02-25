@@ -1,12 +1,19 @@
 ﻿namespace IPTM.WebApp.app.models
 {
-    public class RecipeIngredient
+    using System.Data.Entity;
+    using repository;
+
+    public class RecipeIngredient : Repository<RecipeIngredient>
     {
+        public RecipeIngredient(DbContext dataContext) : base(dataContext)
+        {
+        }
+
         private int _recipeId;
         public int RecipeId
         {
-            get { return RecipeId; }
-            set { RecipeId = value; }
+            get { return _recipeId; }
+            set { _recipeId = value; }
         }
 
         private int _ingredientId;
