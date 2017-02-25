@@ -1,11 +1,28 @@
-﻿class Greeter {
+﻿export interface Ingredient {
+    Id: number;
+    Name: number;
+    Description: number;
+    IngredientTypeId: number;
+    IngredientType: IngredientType;
+    Proof: number;
+}
+
+export interface IngredientType {
+    Id: number;
+    Name: number;
+    Description: number;
+}
+
+class Greeter {
     element: HTMLElement;
     span: HTMLElement;
     timerToken: number;
 
+
     constructor(element: HTMLElement) {
         this.element = element;
-        this.element.innerHTML += "The time is: ";       this.span = document.createElement('span');
+        this.element.innerHTML += "The time is: ";
+        this.span = document.createElement('span');
         this.element.appendChild(this.span);
         this.span.innerText = new Date().toUTCString();
     }
