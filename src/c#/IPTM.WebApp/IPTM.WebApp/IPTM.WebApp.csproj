@@ -22,13 +22,12 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="DbScripts\CocktailSql.sql" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="app\app.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -39,11 +38,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Ingredient.cs" />
-    <Compile Include="Models\IngredientType.cs" />
-    <Compile Include="Models\QuantityType.cs" />
-    <Compile Include="Models\Recipe.cs" />
-    <Compile Include="Models\RecipeIngredient.cs" />
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\directives\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\stylesheets\" />
+    <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
