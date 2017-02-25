@@ -1,4 +1,4 @@
-﻿namespace IPTM.WebApp.Models
+﻿namespace IPTM.WebApp.app.models
 {
     public class RecipeIngredient
     {

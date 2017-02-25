@@ -22,7 +22,7 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DbScripts\CocktailSql.sql" />
+    <Content Include="app\models\dbscripts\CocktailSql.sql" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -39,18 +39,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Ingredient.cs" />
-    <Compile Include="Models\IngredientType.cs" />
-    <Compile Include="Models\Repository\IRepository.cs" />
-    <Compile Include="Models\QuantityType.cs" />
-    <Compile Include="Models\Recipe.cs" />
-    <Compile Include="Models\RecipeIngredient.cs" />
-    <Compile Include="Models\Repository\Repository.cs" />
-	<Folder Include="app\controllers\" />
-    <Folder Include="app\directives\" />
-    <Folder Include="app\models\" />
-    <Folder Include="app\stylesheets\" />
-    <Folder Include="app\views\" />
+    <Compile Include="app\models\Ingredient.cs" />
+    <Compile Include="app\models\IngredientType.cs" />
+    <Compile Include="app\models\repository\IRepository.cs" />
+    <Compile Include="app\models\QuantityType.cs" />
+    <Compile Include="app\models\Recipe.cs" />
+    <Compile Include="app\models\RecipeIngredient.cs" />
+    <Compile Include="app\models\repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -62,7 +57,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
-    
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\directives\" />
+    <Folder Include="app\stylesheets\" />
+    <Folder Include="app\views\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

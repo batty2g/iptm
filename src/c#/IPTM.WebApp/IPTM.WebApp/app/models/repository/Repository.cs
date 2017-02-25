@@ -1,4 +1,4 @@
-﻿namespace IPTM.WebApp.Models.Repository
+﻿namespace IPTM.WebApp.app.models.repository
 {
     using System;
     using System.Data.Entity;
