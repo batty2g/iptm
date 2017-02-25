@@ -1,0 +1,33 @@
+// fonts
+
+$main-font: 'Roboto', sans-serif;
+
+
+
+// colors
+
+
+$main-color: rgba(85,98,112,1);
+$blue: rgba(78,205,196,1);
+
+
+// styling
+
+
+body {
+	background-color: $main-color;
+	font-family: $main-font;
+}
+
+
+// nav style
+
+.navbar {
+	background-color: $blue;
+	border: 0;
+}
+
+
+
+// header style 
+
