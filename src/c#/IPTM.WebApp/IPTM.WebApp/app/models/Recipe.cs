@@ -1,6 +1,6 @@
-﻿namespace IPTM.WebApp.Models
+﻿namespace IPTM.WebApp.app.models
 {
-    public class IngredientType
+    public class Recipe
     {
         private int _id;
         public int Id
@@ -21,6 +21,13 @@
         {
             get { return _description; }
             set { _description = value; }
+        }
+
+        private int _instructions;
+        public int Instructions
+        {
+            get { return _instructions; }
+            set { _instructions = value; }
         }
     }
 }
