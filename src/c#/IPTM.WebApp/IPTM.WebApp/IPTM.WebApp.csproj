@@ -306,10 +306,15 @@
   <ItemGroup>
     <Compile Include="app\models\Ingredient.cs" />
     <Compile Include="app\models\IngredientType.cs" />
+    <Compile Include="app\models\repository\Ingredients.cs" />
+    <Compile Include="app\models\repository\IngredientTypes.cs" />
     <Compile Include="app\models\repository\IRepository.cs" />
     <Compile Include="app\models\QuantityType.cs" />
     <Compile Include="app\models\Recipe.cs" />
     <Compile Include="app\models\RecipeIngredient.cs" />
+    <Compile Include="app\models\repository\QuantityTypes.cs" />
+    <Compile Include="app\models\repository\Recipes.cs" />
+    <Compile Include="app\models\repository\RecipeIngredients.cs" />
     <Compile Include="app\models\repository\Repository.cs" />
   </ItemGroup>
   <ItemGroup>

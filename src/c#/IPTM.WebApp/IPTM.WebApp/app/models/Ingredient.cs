@@ -1,14 +1,7 @@
 ﻿namespace IPTM.WebApp.app.models
 {
-    using System.Data.Entity;
-    using repository;
-
-    public class Ingredient : Repository<Ingredient>
+    public class Ingredient
     {
-        public Ingredient(DbContext dataContext) : base(dataContext)
-        {
-        }
-
         private int _id;
         public int Id {
             get { return _id; }

@@ -1,14 +1,7 @@
 ﻿namespace IPTM.WebApp.app.models
 {
-    using System.Data.Entity;
-    using repository;
-
-    public class QuantityType : Repository<QuantityType>
+    public class QuantityType
     {
-        public QuantityType(DbContext dataContext) : base(dataContext)
-        {
-        }
-
         private int _id;
         public int Id
         {
