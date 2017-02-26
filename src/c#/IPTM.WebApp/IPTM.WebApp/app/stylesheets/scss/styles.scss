@@ -14,6 +14,8 @@ $blue: rgba(78,205,196,1);
 // styling
 
 
+
+
 body,
 html {
     width: 100%;
@@ -31,12 +33,58 @@ h6 {
     font-weight: 700;
 }
 
+
+//  navigation
+
+
+.navbar-default {
+	.navbar-nav {
+		li {
+			a {
+				color: white;
+				font-size: 16px;
+			}
+
+			a:hover {
+				color: white;
+			}
+		}
+	}
+}
+
 .topnav {
-    font-size: 14px;
-    background-color: transparent; 
+    font-size: 22px;
+    background-color: transparent;
     border: 0;
 
+
+    .navbar-brand {
+    	color: white;
+    }
+
+
+    .navbar-brand:hover {
+    	color: white;
+    }
+
 }
+
+
+
+.nav-btn {
+	background-color: $blue;
+	width: 100px;
+	text-decoration: none;
+	color: white;
+	border: 0;
+
+}
+
+.nav-btn:hover {
+	background-color: $blue;
+}
+
+
 
 
 .lead {
@@ -48,15 +96,21 @@ h6 {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
-    color: #f8f8f8;
     background: url('/app/assets/images/crewhero.jpg') no-repeat center center;
     background-size: cover;
+
 }
 
 .intro-message {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
+    color: white;
+
+
+    .search {
+    	color: black;
+    }
 }
 
 .intro-message > h1 {
@@ -74,6 +128,8 @@ h6 {
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
+
+
 
 @media(max-width:767px) {
     .intro-message {
@@ -175,8 +231,14 @@ h6 {
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    padding: 0;
+    background-color: $blue;
+    background-size: 100vh;
+    text-align: center;
 }
 
 p.copyright {
